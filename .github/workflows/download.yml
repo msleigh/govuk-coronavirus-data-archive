@@ -25,7 +25,7 @@ jobs:
                   pip install uk-covid19
 
             - name: Run download script
-              run:
+              run: |
                   set -x
                   ls -la . data/
                   echo "CSV_FILENAME=$(./download.py)" >> $GITHUB_ENV
