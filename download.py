@@ -38,7 +38,7 @@ api = Cov19API(filters=uk_filter, structure=cases_by_specimen_date)
 api_last_update = api.last_update
 release_timestamp = Cov19API.get_release_timestamp()
 
-filestamp = api_last_update.replace(":", "").split(".")[0]
+filestamp = release_timestamp.replace(":", "").split(".")[0]
 
 # print("API timestamp (time the specific data requested were uploaded to the database): ", api_last_update)
 # print("Release timestamp (time the data were released to the API and website (post QC):", release_timestamp)
