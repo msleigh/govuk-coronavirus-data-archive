@@ -26,12 +26,12 @@ jobs:
 
             - name: Run download script
               run:
-                  ./download.py
+                  echo "CSV_FILENAME=$(./download.py)" >> $GITHUB_ENV
 
             - name: Commit resulting CSV file to repository
               run: |
                   git config user.name msleigh
                   git config user.email msleigh@users.noreply.github.com
                   git add -v ./*.csv
-                  git commit -vvm"Updates archive" || exit 0
+                  git commit -vvm"Updates archive with ${CSV_FILENAME}" || exit 0
                   git push -v origin main

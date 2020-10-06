@@ -55,4 +55,8 @@ filestamp = api_last_update.replace(":", "").split(".")[0]
 # print(data.dtypes)
 
 # Write to local CSV file
-api.get_csv(save_as=os.path.join("data", "data_" + filestamp + ".csv"))
+filename = os.path.join("data", "data_" + filestamp + ".csv")
+api.get_csv(save_as=filename)
+
+# Print filename for use by calling script
+print(filename)
