@@ -12,7 +12,8 @@ from uk_covid19 import Cov19API
 # Construct a filter
 # ------------------
 
-uk_filter = ["areaType=overview"]
+#uk_filter = ["areaType=overview"]
+uk_filter = ["areaType=nation"]
 
 # Define the structure
 # --------------------
