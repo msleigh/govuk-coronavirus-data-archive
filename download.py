@@ -26,6 +26,7 @@ cases_by_specimen_date = {
     "date": "date",
     "newCasesBySpecimenDate": "newCasesBySpecimenDate",
     "cumCasesBySpecimenDate": "cumCasesBySpecimenDate",
+    "newDeaths28DaysByDeathDate": "newDeaths28DaysByDeathDate",
 }
 
 # Instantiate API object
